@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  /*vertical-align: baseline;*/ }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "mr-eaves-xl-modern", sans-serif;
+  color: #333;
+  background: url("../images/iStock-667267464.jpg") repeat; }
+
+nav {
+  background: #f8f3d6;
+  width: 100%; }
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    nav ul li:hover, nav ul li:focus {
+      background: #879f49; }
+    nav ul li:first-child {
+      font-family: "ltc-bodoni-175", serif; }
+    nav ul li a {
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 400;
+      text-align: center; }
+      nav ul li a:hover, nav ul li a:focus {
+        color: white; }
+
+h1 {
+  font-family: "ltc-bodoni-175", serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #233c21;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 1rem; }
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 2.2rem; } }
+
+h2 {
+  font-family: "ltc-bodoni-175", serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #233c21;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 1rem; }
+  @media screen and (max-width: 600px) {
+    h2 {
+      font-size: 2.2rem; } }
+
+h3 {
+  font-size: 1.7rem;
+  font-family: "ltc-bodoni-175", serif;
+  color: #696969;
+  margin: 1.4rem 0 .25rem 0; }
+  @media screen and (max-width: 600px) {
+    h3 {
+      font-size: 1.5rem; } }
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #879f49;
+  margin-bottom: 1.2rem; }
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: .8rem; }
+
+a {
+  color: #af945c;
+  font-weight: bold; }
+
+strong {
+  font-weight: bold; }
+
+i {
+  font-style: italic; }
+
+hr {
+  margin: 1.6rem 0;
+  border: 0px solid transparent;
+  border-top: 1.6px solid #f4f4f4; }
+
+.card {
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  max-width: 80%;
+  margin: 1rem auto;
+  margin-bottom: 4rem;
+  padding: 3rem; }
+  @media screen and (min-width: 980px) {
+    .card {
+      max-width: 60%; } }
+  @media screen and (max-width: 600px) {
+    .card {
+      padding: 2rem;
+      max-width: 70%;
+      margin-bottom: 1.5rem; } }
+
+.events h2, .events h3, .events h4 {
+  text-align: center; }
+
+.row {
+  display: flex;
+  align-content: stretch;
+  justify-content: flex-start; }
+  @media screen and (max-width: 600px) {
+    .row {
+      display: block; } }
+
+.col {
+  flex: 0 1 auto;
+  max-width: 60%; }
+  @media screen and (max-width: 600px) {
+    .col {
+      max-width: 100%; } }
+
+@media screen and (min-width: 600px) {
+  .col + .col {
+    padding-left: 2rem; } }
+
+.showcase {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4) 80%, transparent);
+  color: #233c21;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.9); }
+  .showcase-1 {
+    font-size: calc(20px + 1vw);
+    margin: 0; }
+  .showcase-2 {
+    font-size: calc(30px + 6vw);
+    font-family: "ltc-bodoni-175", serif;
+    font-weight: 500;
+    margin: 0; }
+
+/*# sourceMappingURL=style.css.map */

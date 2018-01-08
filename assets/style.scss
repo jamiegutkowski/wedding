@@ -1,0 +1,165 @@
+@import 'reset';
+@import 'mixins';
+
+$primary: #233c21;
+$secondary: #879f49;
+$accent-1: #f8f3d6;
+$accent-2: #76443d;
+$accent-3: #af945c;
+$text-default: #333;
+$medium-gray: #696969;
+$light-gray: #f4f4f4;
+
+
+body {
+	font-family: "mr-eaves-xl-modern", sans-serif;
+	color: $text-default;
+	background: url('../images/iStock-667267464.jpg') repeat;
+
+}
+nav {
+	background: $accent-1;
+	width: 100%;
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+  		justify-content: center;
+		li {
+			&:hover, &:focus {
+				background: $secondary;
+			}
+			&:first-child {
+				font-family: "ltc-bodoni-175", serif;
+			}
+			a {
+				display: block;
+				padding: 1rem;
+				text-decoration: none;
+				color: $text-default;
+				font-weight: 400;
+				text-align: center;
+				&:hover, &:focus {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+h1 {
+	font-family: "ltc-bodoni-175", serif;
+	font-weight: 500;
+	font-size: 2.8rem;
+	color: $primary;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 1rem;
+	@media screen and (max-width: 600px) {
+		font-size: 2.2rem;
+	}
+}
+h2 {
+	font-family: "ltc-bodoni-175", serif;
+	font-weight: 500;
+	font-size: 2.8rem;
+	color: $primary;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 1rem;
+	@media screen and (max-width: 600px) {
+		font-size: 2.2rem;
+	}
+}
+h3 {
+	font-size: 1.7rem;
+	font-family: "ltc-bodoni-175", serif;
+	color: $medium-gray;
+	margin: 1.4rem 0 .25rem 0;
+	@media screen and (max-width: 600px) {
+		font-size: 1.5rem;
+	}
+}
+h4 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: $secondary;
+	margin-bottom: 1.2rem;
+}
+p {
+	font-size: 1.2rem;
+	margin-bottom: .8rem;
+}
+a {
+	color: $accent-3;
+	font-weight: bold;
+}
+strong {
+	font-weight: bold;
+}
+i {
+	font-style: italic;
+}
+hr {
+	margin: 1.6rem 0;
+	border: 0px solid transparent;
+	border-top: 1.6px solid $light-gray;
+}
+.card {
+	@include shadow();
+	background: #fff;
+	max-width: 80%;
+	margin: 1rem auto;
+	margin-bottom: 4rem;
+	padding: 3rem;
+	@media screen and (min-width: 980px) {
+		max-width: 60%;
+	} 
+	@media screen and (max-width: 600px) {
+		padding: 2rem;
+		max-width: 70%;
+		margin-bottom: 1.5rem;
+	}
+}
+.events {
+	h2, h3, h4 {
+		text-align: center;
+	}
+}
+.row {
+	display: flex;
+	align-content: stretch;	
+	justify-content:flex-start;	
+	@media screen and (max-width: 600px) {
+		display: block;
+	} 
+}
+.col {
+	flex: 0 1 auto;
+    max-width: 60%;
+    @media screen and (max-width: 600px) {
+		max-width: 100%;
+	} 
+}
+.col + .col {
+	@media screen and (min-width: 600px) {
+		padding-left: 2rem;
+	}
+}
+.showcase {
+	background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.4) 80%, transparent);
+	color: $primary;
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0;
+	@include font-shadow();
+	&-1 {
+		font-size: calc(20px + 1vw);
+		margin: 0;
+	}
+	&-2 {
+		font-size: calc(30px + 6vw);
+		font-family: "ltc-bodoni-175", serif;
+		font-weight: 500;
+		margin: 0;
+	}
+}

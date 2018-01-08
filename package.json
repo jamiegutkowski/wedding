@@ -1,0 +1,18 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "parallelshell": "^2.0.0"
+    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch assets:css",
+    "sync-site": "browser-sync start --server --files",
+    "dev": "parallelshell 'npm run watch' 'npm run sync-site'"
+  },
+  "author": "",
+  "license": "ISC" 
+}
